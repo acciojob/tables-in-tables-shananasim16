@@ -2,47 +2,28 @@
 <html>
 <head>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .main-table {
+        table {
             border-collapse: collapse;
             width: 100%;
         }
 
-        .main-table td {
+        th, td {
             border: 1px solid #000;
             padding: 10px;
+            text-align: center;
         }
 
-        .nested-table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        .nested-table th {
-            background-color: #f2f2f2;
-            padding: 8px;
-            text-align: left;
-        }
-
-        .nested-table td {
-            border: 1px solid #ccc;
-            padding: 8px;
-        }
-
-        .black-bg {
+        .black-cell {
             background-color: black;
             color: white;
         }
     </style>
 </head>
 <body>
-    <table class="main-table">
+    <table>
         <tr>
-            <td>
-                <table class="nested-table">
+            <td rowspan="2">
+                <table>
                     <tr>
                         <th colspan="2">Nested Table 1</th>
                     </tr>
@@ -52,21 +33,23 @@
                     </tr>
                 </table>
             </td>
-            <td>
-                <table class="nested-table">
+            <td rowspan="2">
+                <table>
                     <tr>
                         <th colspan="2">Nested Table 2</th>
                     </tr>
                     <tr>
-                        <td class="black-bg">HTML</td>
+                        <td class="black-cell">HTML</td>
                         <td>Column 2</td>
                     </tr>
                 </table>
             </td>
         </tr>
         <tr>
+        </tr>
+        <tr>
             <td colspan="2">
-                <table class="nested-table">
+                <table>
                     <tr>
                         <th colspan="2">Nested Table 3</th>
                     </tr>
