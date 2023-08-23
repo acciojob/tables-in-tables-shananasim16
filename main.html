@@ -1,64 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .black-cell {
-            background-color: black;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <th colspan="2">Nested Table 1</th>
-                    </tr>
-                    <tr>
-                        <td>Column 1</td>
-                        <td>Column 2</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <th colspan="2">Nested Table 2</th>
-                    </tr>
-                    <tr>
-                        <td class="black-cell">HTML</td>
-                        <td>Column 2</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <table>
-                    <tr>
-                        <th colspan="2">Nested Table 3</th>
-                    </tr>
-                    <tr>
-                        <td>List item 1</td>
-                        <td>List item 2</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table style="width: 100%; height: 100%">
+      <tr>
+        <td colspan="0">
+          <table>
+            <tr>
+              <th colspan="2">Nested Table 2</th>
+            </tr>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+            </tr>
+            <tbody>
+              <td>abc</td>
+              <td>def</td>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <th>Nested Table 1</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <th colspan="2">Nested Table 3</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="">Nested Table</a>
+              </td>
+              <td>Demo Continued</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <th>Nested Table 4</th>
+            </tr>
+            <tr>
+              <td id="bg-check" style="background-color: black; color: white">
+                HTML
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
-</body>
+  </body>
 </html>
-
